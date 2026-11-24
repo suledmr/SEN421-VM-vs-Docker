@@ -1,0 +1,14 @@
+[Unit]
+Description=SEN421 FastAPI Benchmark Service
+After=network.target
+
+[Service]
+Type=simple
+User=sen421
+WorkingDirectory=/home/sen421/sen421-benchmark
+ExecStart=/home/sen421/sen421-benchmark/.venv/bin/python -m uvicorn app.main:app --host 0.0.0.0 --port 8081
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

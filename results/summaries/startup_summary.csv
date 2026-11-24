@@ -1,0 +1,3 @@
+Environment,Runs,Mean_Startup_s,SD_Startup_s,Min_Startup_s,Max_Startup_s
+docker,3,0.8236666666666667,0.18181950757092413,0.697,1.032
+vm,3,39.23533333333333,0.8768433915662106,38.406,40.153
